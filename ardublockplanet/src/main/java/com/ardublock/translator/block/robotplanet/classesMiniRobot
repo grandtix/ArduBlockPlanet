@@ -1,0 +1,69 @@
+    void initialise();
+	  void avance();
+	  void recule();
+	  void arrete();
+    	void tourneDroite();
+    	void tourneGauche();
+    	void pasADroite();
+    	void pasAGauche();
+    int antenneGauche();
+    int antenneDroite();
+  	  int oeilGauche();
+   	  int oeilDroit();
+    int oeilGaucheJV();
+    int oeilDroitJV();
+   	 int zeroG();
+  	  int zeroD();
+	    void allumeR();
+	    void allumeV();
+	    void eteintR();
+	    void eteintV();
+   	 int boutonGauche();
+   	 int boutonDroit();
+ 	 void vitesseGauche(int v);
+ 	 void vitesseDroite(int v);
+    int obstacle();
+    int distance();
+  	 void son1(); 
+	 void son2(); 
+	 void son3(); 
+	 void son4(); 
+	 void son5(); 
+	 void son6(); 
+	 void son7(); 
+	 
+	 
+	 
+	 
+	 
+robotStopRight
+robotStopLeft
+robotTurnRight
+robotTurnLeft
+robotStepRight
+robotStepLeft
+robotAntennaRight
+robotAntennaLeft
+robotStartGreenLed
+robotStartRedLed
+robotStopGreenLed
+robotStopRedLed
+robotObstablePresent
+robotObstacleDistange
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
