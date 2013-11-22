@@ -1893,6 +1893,9 @@
 				<BlockGenusMember>robotStartLed</BlockGenusMember>
 				<BlockGenusMember>robotStopLed</BlockGenusMember>
 
+
+
+
 			</BlockDrawer>
 			<BlockDrawer button-color="131 143 226" name="bd.planetRobotSensor">
 				<BlockGenusMember>robotObstablePresent</BlockGenusMember>
