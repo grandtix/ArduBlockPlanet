@@ -303,13 +303,13 @@
 			</description>
 			<BlockConnectors>
 				<BlockConnector connector-type="string"
-					connector-kind="socket" position-type="bottom" >
-<DefaultArg genus-name="variable_string" label="varname"/>
-					</BlockConnector>
+					connector-kind="socket" position-type="bottom">
+					<DefaultArg genus-name="variable_string" label="varname" />
+				</BlockConnector>
 				<BlockConnector connector-type="string"
-					connector-kind="socket" position-type="bottom" >
-					<DefaultArg genus-name="string" label="texte"/>
-					</BlockConnector>
+					connector-kind="socket" position-type="bottom">
+					<DefaultArg genus-name="string" label="texte" />
+				</BlockConnector>
 			</BlockConnectors>
 
 
@@ -357,11 +357,11 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" position-type="bottom">
-					<DefaultArg genus-name="variable_number" label="varname"/>
+					<DefaultArg genus-name="variable_number" label="varname" />
 				</BlockConnector>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" position-type="bottom">
-					<DefaultArg genus-name="number" label="0"/>
+					<DefaultArg genus-name="number" label="0" />
 				</BlockConnector>
 			</BlockConnectors>
 		</BlockGenus>
@@ -388,7 +388,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="boolean"
 					connector-kind="socket" position-type="bottom">
-					<DefaultArg genus-name="variable_digital" label="varname"/>
+					<DefaultArg genus-name="variable_digital" label="varname" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean"
 					connector-kind="socket" position-type="bottom">
@@ -1576,14 +1576,14 @@
 			</Images>
 		</BlockGenus>
 
-<BlockGenus name="robotAction" kind="command" color="153 153 153"
+		<BlockGenus name="robotAction" kind="command" color="153 153 153"
 			initlabel="bg.robotAction">
 			<description>
 				<text>faire une action au robot</text>
 			</description>
 			<BlockConnectors>
-				<BlockConnector connector-type="number" connector-kind="socket"
-					position-type="bottom">
+				<BlockConnector connector-type="number"
+					connector-kind="socket" position-type="bottom">
 					<DefaultArg genus-name="robot" label="miniRobot" />
 				</BlockConnector>
 				<BlockConnector connector-type="number"
@@ -1635,7 +1635,7 @@
 					connector-kind="plug" position-type="mirror" />
 				<BlockConnector connector-type="number" label="pin"
 					connector-kind="socket" position-type="bottom">
-<DefaultArg genus-name="number" label="1" />
+					<DefaultArg genus-name="number" label="1" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -1659,7 +1659,7 @@
 					connector-kind="plug" position-type="mirror" />
 				<BlockConnector connector-type="number" label="pin"
 					connector-kind="socket" position-type="bottom">
-<DefaultArg genus-name="number" label="1" />
+					<DefaultArg genus-name="number" label="1" />
 				</BlockConnector>
 			</BlockConnectors>
 			<Images>
@@ -1903,8 +1903,8 @@
 				<BlockGenusMember>robotRightButton</BlockGenusMember>
 				<BlockGenusMember>robotCapteurAnalogique</BlockGenusMember>
 				<BlockGenusMember>robotCapteurNumerique</BlockGenusMember>
-<BlockGenusMember>robotAntennaRight</BlockGenusMember>
-<BlockGenusMember>robotAntennaLeft</BlockGenusMember>
+				<BlockGenusMember>robotAntennaRight</BlockGenusMember>
+				<BlockGenusMember>robotAntennaLeft</BlockGenusMember>
 			</BlockDrawer>
 
 
