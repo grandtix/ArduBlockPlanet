@@ -1903,7 +1903,8 @@
 				<BlockGenusMember>robotRightButton</BlockGenusMember>
 				<BlockGenusMember>robotCapteurAnalogique</BlockGenusMember>
 				<BlockGenusMember>robotCapteurNumerique</BlockGenusMember>
-
+<BlockGenusMember>robotAntennaRight</BlockGenusMember>
+<BlockGenusMember>robotAntennaLeft</BlockGenusMember>
 			</BlockDrawer>
 
 
