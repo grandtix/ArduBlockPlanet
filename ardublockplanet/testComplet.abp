@@ -3,6 +3,98 @@
 <Pages collapsible-pages="yes" drawer-with-page="yes">
 <Page page-color="192 192 192" page-drawer="ArduBlock" page-infullview="yes" page-name="ArduBlock" page-width="2678">
 <PageBlocks>
+<Block genus-name="robotAntennaLeft" id="290">
+<Location>
+<X>937</X>
+<Y>499</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="289" connector-kind="plug" connector-type="boolean" init-type="boolean" label="bm.right" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="291" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="robot" id="291">
+<Label>miniRobot</Label>
+<Location>
+<X>947</X>
+<Y>530</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="290" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="robotAntennaRight" id="286">
+<Location>
+<X>937</X>
+<Y>443</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="289" connector-kind="plug" connector-type="boolean" init-type="boolean" label="bm.right" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="287" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="robot" id="287">
+<Label>miniRobot</Label>
+<Location>
+<X>947</X>
+<Y>474</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="286" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="or" id="289">
+<Location>
+<X>887</X>
+<Y>440</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="288" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="286" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+<BlockConnector con-block-id="290" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="or" id="288">
+<Location>
+<X>837</X>
+<Y>345</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="136" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="141" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+<BlockConnector con-block-id="289" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="robotObstablePresent" id="141">
+<Location>
+<X>887</X>
+<Y>348</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="288" connector-kind="plug" connector-type="boolean" init-type="boolean" label="bm.right" position-type="mirror"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="142" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
+</Sockets>
+</Block>
+<Block genus-name="robot" id="142">
+<Label>miniRobot</Label>
+<Location>
+<X>897</X>
+<Y>418</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="141" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
+</Plug>
+</Block>
 <Block genus-name="map" id="199">
 <Location>
 <X>492</X>
@@ -85,7 +177,7 @@
 <Label>1024</Label>
 <Location>
 <X>1130</X>
-<Y>922</Y>
+<Y>1047</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="171" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -344,7 +436,7 @@
 <Block genus-name="serial_printlnNumber" id="171">
 <Location>
 <X>834</X>
-<Y>919</Y>
+<Y>1044</Y>
 </Location>
 <BeforeBlockId>139</BeforeBlockId>
 <Sockets num-sockets="1">
@@ -355,7 +447,7 @@
 <Label>ok</Label>
 <Location>
 <X>1235</X>
-<Y>850</Y>
+<Y>975</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="169" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
@@ -365,7 +457,7 @@
 <Label>valeur</Label>
 <Location>
 <X>1122</X>
-<Y>850</Y>
+<Y>975</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="169" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
@@ -374,7 +466,7 @@
 <Block genus-name="addText" id="169">
 <Location>
 <X>1112</X>
-<Y>847</Y>
+<Y>972</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="167" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
@@ -387,7 +479,7 @@
 <Block genus-name="serial_println" id="167">
 <Location>
 <X>852</X>
-<Y>844</Y>
+<Y>969</Y>
 </Location>
 <BeforeBlockId>138</BeforeBlockId>
 <Sockets num-sockets="1">
@@ -397,7 +489,7 @@
 <Block genus-name="number" id="166">
 <Location>
 <X>1400</X>
-<Y>813</Y>
+<Y>938</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="159" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -406,7 +498,7 @@
 <Block genus-name="not_equal" id="160">
 <Location>
 <X>855</X>
-<Y>775</Y>
+<Y>900</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="138" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
@@ -419,7 +511,7 @@
 <Block genus-name="addition" id="159">
 <Location>
 <X>1390</X>
-<Y>778</Y>
+<Y>903</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -432,7 +524,7 @@
 <Block genus-name="robotLeftEye" id="157">
 <Location>
 <X>1479</X>
-<Y>781</Y>
+<Y>906</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="159" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -445,7 +537,7 @@
 <Label>miniRobot</Label>
 <Location>
 <X>1489</X>
-<Y>812</Y>
+<Y>937</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="157" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
@@ -454,7 +546,7 @@
 <Block genus-name="modulo" id="162">
 <Location>
 <X>865</X>
-<Y>778</Y>
+<Y>903</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -467,7 +559,7 @@
 <Block genus-name="number" id="165">
 <Location>
 <X>1202</X>
-<Y>813</Y>
+<Y>938</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="162" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -476,7 +568,7 @@
 <Block genus-name="robotRightEye" id="163">
 <Location>
 <X>875</X>
-<Y>781</Y>
+<Y>906</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="162" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -489,7 +581,7 @@
 <Label>miniRobot</Label>
 <Location>
 <X>885</X>
-<Y>812</Y>
+<Y>937</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="163" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
@@ -498,7 +590,7 @@
 <Block genus-name="robotObstacleDistange" id="155">
 <Location>
 <X>1130</X>
-<Y>663</Y>
+<Y>788</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="153" connector-kind="plug" connector-type="number" init-type="number" label="bm.right" position-type="mirror"/>
@@ -511,7 +603,7 @@
 <Label>miniRobot</Label>
 <Location>
 <X>1140</X>
-<Y>734</Y>
+<Y>859</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="155" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
@@ -520,7 +612,7 @@
 <Block genus-name="serial_printlnNumber" id="153">
 <Location>
 <X>834</X>
-<Y>660</Y>
+<Y>785</Y>
 </Location>
 <BeforeBlockId>137</BeforeBlockId>
 <Sockets num-sockets="1">
@@ -530,7 +622,7 @@
 <Block genus-name="serial_println" id="151">
 <Location>
 <X>833</X>
-<Y>489</Y>
+<Y>614</Y>
 </Location>
 <BeforeBlockId>136</BeforeBlockId>
 <Sockets num-sockets="1">
@@ -541,7 +633,7 @@
 <Label>pas d'obstacle</Label>
 <Location>
 <X>1093</X>
-<Y>492</Y>
+<Y>617</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="151" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
@@ -550,7 +642,7 @@
 <Block genus-name="serial_println" id="149">
 <Location>
 <X>834</X>
-<Y>448</Y>
+<Y>573</Y>
 </Location>
 <BeforeBlockId>136</BeforeBlockId>
 <Sockets num-sockets="1">
@@ -561,7 +653,7 @@
 <Label>obstacle present</Label>
 <Location>
 <X>1094</X>
-<Y>451</Y>
+<Y>576</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="149" connector-kind="plug" connector-type="string" init-type="string" label="" position-type="mirror"/>
@@ -699,7 +791,7 @@
 <Label>mybool</Label>
 <Location>
 <X>885</X>
-<Y>631</Y>
+<Y>756</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="144" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
@@ -708,7 +800,7 @@
 <Block genus-name="greater" id="143">
 <Location>
 <X>885</X>
-<Y>531</Y>
+<Y>656</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="144" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="mirror"/>
@@ -722,7 +814,7 @@
 <Label>50</Label>
 <Location>
 <X>1224</X>
-<Y>606</Y>
+<Y>731</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="143" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -731,7 +823,7 @@
 <Block genus-name="robotObstacleDistange" id="145">
 <Location>
 <X>895</X>
-<Y>534</Y>
+<Y>659</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="143" connector-kind="plug" connector-type="number" init-type="number" label="bm.right" position-type="mirror"/>
@@ -744,7 +836,7 @@
 <Label>miniRobot</Label>
 <Location>
 <X>905</X>
-<Y>605</Y>
+<Y>730</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="145" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
@@ -753,7 +845,7 @@
 <Block genus-name="and" id="144">
 <Location>
 <X>837</X>
-<Y>531</Y>
+<Y>656</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="137" connector-kind="plug" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
@@ -763,32 +855,10 @@
 <BlockConnector con-block-id="148" connector-kind="socket" connector-type="boolean" init-type="boolean" label="" position-type="single"/>
 </Sockets>
 </Block>
-<Block genus-name="robotObstablePresent" id="141">
-<Location>
-<X>837</X>
-<Y>348</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="136" connector-kind="plug" connector-type="boolean" init-type="boolean" label="bm.right" position-type="mirror"/>
-</Plug>
-<Sockets num-sockets="1">
-<BlockConnector con-block-id="142" connector-kind="socket" connector-type="poly" init-type="poly" label="" position-type="bottom"/>
-</Sockets>
-</Block>
-<Block genus-name="robot" id="142">
-<Label>miniRobot</Label>
-<Location>
-<X>847</X>
-<Y>418</Y>
-</Location>
-<Plug>
-<BlockConnector con-block-id="141" connector-kind="plug" connector-type="poly" init-type="poly" label="" position-type="mirror"/>
-</Plug>
-</Block>
 <Block genus-name="repeat_times" id="139">
 <Location>
 <X>741</X>
-<Y>887</Y>
+<Y>1012</Y>
 </Location>
 <BeforeBlockId>138</BeforeBlockId>
 <Sockets num-sockets="2">
@@ -800,7 +870,7 @@
 <Label>5</Label>
 <Location>
 <X>837</X>
-<Y>890</Y>
+<Y>1015</Y>
 </Location>
 <Plug>
 <BlockConnector con-block-id="139" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
@@ -824,7 +894,7 @@
 <BeforeBlockId>95</BeforeBlockId>
 <AfterBlockId>137</AfterBlockId>
 <Sockets num-sockets="3">
-<BlockConnector con-block-id="141" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Si" position-type="single"/>
+<BlockConnector con-block-id="288" connector-kind="socket" connector-type="boolean" init-type="boolean" label="Si" position-type="single"/>
 <BlockConnector con-block-id="149" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Alors" position-type="single"/>
 <BlockConnector con-block-id="151" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Sinon" position-type="single"/>
 </Sockets>
@@ -832,7 +902,7 @@
 <Block genus-name="if" id="137">
 <Location>
 <X>741</X>
-<Y>528</Y>
+<Y>653</Y>
 </Location>
 <BeforeBlockId>136</BeforeBlockId>
 <AfterBlockId>138</AfterBlockId>
@@ -844,7 +914,7 @@
 <Block genus-name="while" id="138">
 <Location>
 <X>741</X>
-<Y>772</Y>
+<Y>897</Y>
 </Location>
 <BeforeBlockId>137</BeforeBlockId>
 <AfterBlockId>139</AfterBlockId>
@@ -1008,7 +1078,7 @@
 </Block>
 <Block genus-name="number" id="127">
 <Location>
-<X>1168</X>
+<X>1084</X>
 <Y>159</Y>
 </Location>
 <Plug>
@@ -1050,7 +1120,7 @@
 </Block>
 <Block genus-name="number" id="87">
 <Location>
-<X>1175</X>
+<X>1084</X>
 <Y>93</Y>
 </Location>
 <Plug>
